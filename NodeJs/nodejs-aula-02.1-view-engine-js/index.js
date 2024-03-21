@@ -6,6 +6,7 @@ const app = express()
 
 // Definindo o EJS para renderizar páginas HTML
 app.set('view engine', 'ejs')
+app.use(express.static('views'));
 
 // Criando a primeira rota (Principal) 
 app.get("/", (req, res)=>{
